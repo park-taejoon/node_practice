@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "forever": "^3.0.0",
+    "morgan": "^1.10.0",
+    "supervisor": "^0.12.0"
+  }
 }
