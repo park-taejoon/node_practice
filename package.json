@@ -18,6 +18,8 @@
     "forever": "^3.0.0",
     "mariadb": "^2.4.0",
     "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "socket.io": "^2.3.0",
     "supervisor": "^0.12.0"
   }
 }

@@ -1,14 +1,20 @@
-var maria = require('mariadb');
+var maria = require('mysql');
 var client = maria.createConnection({
-    user : null,
-    password : null
+    host: 'localhost',
+    post: 3306,
+    database : "nata",
+    user : "",
+    password : ""
 });
 
+//client.connect();
 client.query('USE nata');
-client.query('select * from nata.t_user', function (err, result, fields) {
-    if(err) {
-        console.log('query err');
-    }else {
-        console.log(result)
-    }
-})
+module.exports = client;
+// client.query('select * from t_user', function (err, rows, fields) {
+//     client.end();
+//     if(err) {
+//         console.log('query err');
+//     }else {
+//         console.log(rows)
+//     }
+// })
